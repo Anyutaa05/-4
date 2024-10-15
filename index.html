@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Висота сторінки на 100% */
+            margin: 0; /* Видалити відступи */
+            background-color: 	#E6E6FA; /* Легкий фон */
+        }
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 40px; /* Збільшено внутрішні відступи */
+            border-radius: 15px; /* Більш округлені кути */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Більш виразна тінь */
+            width: 100%;
+            max-width: 450px; /* Трохи ширша форма */
+        }
+        input, select, button {
+            margin-bottom: 15px; /* Збільшено відстань між полями */
+            padding: 12px; /* Збільшено внутрішні відступи для полів */
+            width: 100%;
+            border-radius: 8px; /* Закруглені кути для полів вводу */
+            border: 1px solid #ddd; /* Тонка рамка для полів вводу */
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #DDA0DD;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            border-radius: 8px; /* Закруглені кути кнопки */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для кнопки */
+            transition: background-color 0.3s ease; /* Плавний перехід кольору кнопки */
+        }
+        button:hover {
+            background-color: #DA70D6; /* Зміна кольору при наведенні */
+        }
+        h1 {
+            margin-bottom: 20px; /* Відступ після заголовка */
+            color: #DA70D6; /* Колір заголовка */
+        }
+        label {
+            display: block;
+            margin-bottom: 5px; /* Відступ перед полем вводу */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form class="registration-form" action="https://webhook.site">
+        <h1>Форма реєстрації</h1>
+
+        <label for="inputName">Ім'я користувача:<sup style="color: red;">*</sup></label>
+        <input type="text" name="inputName" id="inputName" required>
+
+        <label for="inputSurname">Прізвище користувача:</label>
+        <input type="text" name="inputSurname" id="inputSurname">
+
+        <label for="inputEmail">Електронна пошта:<sup style="color: red;">*</sup></label>
+        <input type="email" name="inputEmail" id="inputEmail" required>
+
+        <label for="inputPwd">Ваш пароль:<sup style="color: red;">*</sup></label>
+        <input type="password" name="pwd" id="inputPwd" required>
+
+        <label for="inputRPwd">Повторіть пароль:<sup style="color: red;">*</sup></label>
+        <input type="password" name="rpwd" id="inputRPwd" required>
+
+        <label for="genderSelect">Виберіть стать:</label>
+        <select name="gender" id="genderSelect">
+            <option value="undefined">Не вказано</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+        </select>
+
+        <button type="submit">Відправити</button>
+    </form>
+</body>
+</html>
