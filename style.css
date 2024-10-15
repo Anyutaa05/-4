@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFB6C1; /* Легкий фон */
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px; /* Внутрішні відступи */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для форми */
+    width: 100%;
+    max-width: 400px;
+}
+
+input, select, button {
+    margin-bottom: 10px;
+    padding: 10px; /* Внутрішні відступи для полів вводу */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Закруглені кути кнопки */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь для кнопки */
+}
+
+button:hover {
+    background-color: #FF1493;
+}
